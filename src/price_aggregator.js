@@ -21,6 +21,8 @@ export default class PriceAggregator {
         const rawData = await api.fetchPrices();
         const formattedData = api.formatData(rawData);
 
+        console.log(formattedData);
+
         formattedData.forEach(item => {
           // Ensure item_name and source are present
           if (item && item.item_name) { 
@@ -53,20 +55,30 @@ export default class PriceAggregator {
     const jsonData = {};
 
     prices.forEach(item => {
-      const { item_name, source, ...rest } = item; // Destructure item
+      // Destructure item, ensuring market_hash_name is used as the key
+      const { market_hash_name, source, ...rest } = item; 
       
-      if (!item_name || !source) {
-        console.warn("Skipping item due to missing name or source:", item);
+      if (!market_hash_name || !source) {
+        console.warn("Skipping item due to missing market_hash_name or source:", item);
         return; // Skip this item if essential keys are missing
       }
 
-      if (!jsonData[item_name]) {
-        jsonData[item_name] = {};
+      if (!jsonData[market_hash_name]) {
+        jsonData[market_hash_name] = {};
       }
 
-      // Assuming 'rest' contains price, wear, etc.
-      // Store the rest of the item details under the source key
-      jsonData[item_name][source] = rest; 
+      // Check if the source is CSFloat
+      if (source === 'CSFloat') { // Assuming 'CSFloat' is the apiName for CSFloatAPI
+        // Initialize the array if it doesn't exist
+        if (!Array.isArray(jsonData[market_hash_name][source])) {
+          jsonData[market_hash_name][source] = [];
+        }
+        // Push the item details into the array
+        jsonData[market_hash_name][source].push(rest);
+      } else {
+        // For other APIs, keep the original behavior (overwrite or set)
+        jsonData[market_hash_name][source] = rest;
+      }
     });
 
     try {

@@ -22,6 +22,7 @@ export default class CSFloatAPI extends SkinPriceAPI {
     try {
       return data.data.map(item => ({
         item_name: item.item.item_name,
+        market_hash_name: item.item.market_hash_name,
         price: item.price,
         float: item.item.float_value,
         rarity: item.item.rarity,
