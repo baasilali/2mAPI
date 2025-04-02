@@ -1,0 +1,26 @@
+{
+    "M4A4 | Poseidon (Factory New)": {
+        "csfloat": {
+            "item_name": "M4A4 | Poseidon (Factory New)",
+            "price": 100,
+            "float": 0.9,
+            "rarity": "Factory New",
+            "def_index": 1,
+            "paint_index": 1,
+            "quality": 1,
+            "stattrack": false,
+            "souvenir": false
+        },
+        "bitskins": {
+            "item_name": "M4A4 | Poseidon (Factory New)",
+            "price": 100,
+            "float": 0.9,
+            "rarity": "Factory New",
+            "def_index": 1,
+            "paint_index": 1,
+            "quality": 1,
+            "stattrack": false,
+            "souvenir": false
+        }
+    }
+}
