@@ -1,5 +1,5 @@
-import CSFloatAPI from './apis/csfloat.js';
-import SkinPriceAPI from './apis/skinprice.js';
+import CSFloatAPI from './api/csfloat.js';
+import SkinPriceAPI from './api/skinprice.js';
 
 export default class ApiFactory {
   /**

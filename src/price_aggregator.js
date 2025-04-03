@@ -1,9 +1,10 @@
-import CSFloatAPI from './apis/csfloat.js';
-import SkinPriceAPI from './apis/skinprice.js'; // Assuming SkinPriceAPI is the base class
+import CSFloatAPI from './api/csfloat.js';
+import SkinPriceAPI from './api/skinprice.js'; // Assuming SkinPriceAPI is the base class
 
 export default class PriceAggregator {
-  constructor() {
+  constructor(marketHashNames) {
     this.apis = [];
+    this.marketHashNames = marketHashNames;
   }
 
   addApi(api) {
@@ -18,23 +19,12 @@ export default class PriceAggregator {
 
     for (const api of this.apis) {
       try {
-        const rawData = await api.fetchPrices();
+        const rawData = await api.fetchPrices(this.marketHashNames);
         const formattedData = api.formatData(rawData);
 
         console.log(formattedData);
-
-        formattedData.forEach(item => {
-          // Ensure item_name and source are present
-          if (item && item.item_name) { 
-            item.source = api.apiName; 
-          } else {
-            console.warn(`Skipping item due to missing data from ${api.apiName}:`, item);
-          }
-        });
         
-        // Filter out items that were skipped
-        const validItems = formattedData.filter(item => item && item.item_name && item.source);
-        allPrices.push(...validItems);
+        allPrices.push(...formattedData);
 
       } catch (error) {
         console.error(`Error collecting prices from ${api.apiName}: ${error.message}`);
