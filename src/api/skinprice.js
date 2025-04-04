@@ -2,6 +2,7 @@ export default class SkinPriceAPI {
     constructor(apiName, apiKey = null) {
       this.apiName = apiName;
       this.apiKey = apiKey;
+      this.prefix = `[${apiName}]`;
     }
   
     async fetchPrices() {

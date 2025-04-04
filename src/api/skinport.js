@@ -8,9 +8,8 @@ export default class SkinPortAPI extends SkinPriceAPI {
     super("SkinPort", apiKey);
   }
 
-
   async fetchPrices(marketHashNames) {
-    const filePath = path.resolve(process.cwd(), 'files/skinport/skinport_data.json');
+    const filePath = path.resolve(process.cwd(), 'data/skinport/skinport_data.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const result = [];
     for (const marketHashName of marketHashNames) {

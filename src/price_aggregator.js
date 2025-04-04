@@ -1,5 +1,4 @@
-import CSFloatAPI from './api/csfloat.js';
-import SkinPriceAPI from './api/skinprice.js'; // Assuming SkinPriceAPI is the base class
+import SkinPriceAPI from './api/skinprice.js'
 
 export default class PriceAggregator {
   constructor(marketHashNames) {
@@ -56,14 +55,7 @@ export default class PriceAggregator {
         jsonData[market_hash_name] = {};
       }
 
-      if (source === 'CSFloat') { 
-        if (!Array.isArray(jsonData[market_hash_name][source])) {
-          jsonData[market_hash_name][source] = [];
-        }
-        jsonData[market_hash_name][source].push(rest);
-      } else {
-        jsonData[market_hash_name][source] = rest;
-      }
+      jsonData[market_hash_name][source] = rest;
     });
 
     try {
@@ -103,16 +95,7 @@ export default class PriceAggregator {
           } else {
             Object.keys(jsonData[market_hash_name]).forEach(source => {
               const newData = jsonData[market_hash_name][source];
-              if (source === 'CSFloat') {
-                if (!Array.isArray(fileData[market_hash_name][source])) {
-                  fileData[market_hash_name][source] = [];
-                }
-                if(Array.isArray(newData)) { 
-                   fileData[market_hash_name][source] = fileData[market_hash_name][source].concat(newData);
-                }
-              } else {
-                fileData[market_hash_name][source] = newData;
-              }
+              fileData[market_hash_name][source] = newData;
             });
           }
         });
