@@ -21,12 +21,11 @@ export default class PriceAggregator {
       try {
         const rawData = await api.fetchPrices(this.marketHashNames);
         const formattedData = api.formatData(rawData);
-
-        console.log(formattedData);
         
         allPrices.push(...formattedData);
 
       } catch (error) {
+        console.log(error);
         console.error(`Error collecting prices from ${api.apiName}: ${error.message}`);
       }
     }
@@ -34,48 +33,42 @@ export default class PriceAggregator {
     return allPrices;
   }
 
-  async exportToJson(filename = "skin_prices.json") {
+  async exportToJson() {
+    const filename = "prices_output.json";
     const prices = await this.collectAllPrices();
 
     if (!prices.length) {
-      console.log("No price data collected.");
+      console.log("No new price data collected."); 
       return;
     }
 
-    const jsonData = {};
+    const jsonData = {}; 
 
     prices.forEach(item => {
-      // Destructure item, ensuring market_hash_name is used as the key
       const { market_hash_name, source, ...rest } = item; 
       
       if (!market_hash_name || !source) {
         console.warn("Skipping item due to missing market_hash_name or source:", item);
-        return; // Skip this item if essential keys are missing
+        return; 
       }
 
       if (!jsonData[market_hash_name]) {
         jsonData[market_hash_name] = {};
       }
 
-      // Check if the source is CSFloat
-      if (source === 'CSFloat') { // Assuming 'CSFloat' is the apiName for CSFloatAPI
-        // Initialize the array if it doesn't exist
+      if (source === 'CSFloat') { 
         if (!Array.isArray(jsonData[market_hash_name][source])) {
           jsonData[market_hash_name][source] = [];
         }
-        // Push the item details into the array
         jsonData[market_hash_name][source].push(rest);
       } else {
-        // For other APIs, keep the original behavior (overwrite or set)
         jsonData[market_hash_name][source] = rest;
       }
     });
 
     try {
-      const jsonContent = JSON.stringify(jsonData, null, 2); // Pretty print JSON
-
-      // Environment-specific saving logic for JSON
-      if (typeof window !== "undefined" && window.document) { // Browser
+      if (typeof window !== "undefined" && window.document) { 
+        const jsonContent = JSON.stringify(jsonData, null, 2);
         const blob = new Blob([jsonContent], { type: "application/json;charset=utf-8;" });
         const link = document.createElement("a");
         const url = URL.createObjectURL(blob);
@@ -85,18 +78,57 @@ export default class PriceAggregator {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        URL.revokeObjectURL(url); // Clean up Object URL
+        URL.revokeObjectURL(url); 
+        console.log(`Price data prepared for download as ${filename}`);
       } 
-      else if (typeof process !== 'undefined' && process.versions && process.versions.node) { // Node.js
-         // Dynamically require 'fs' only in Node.js environment
-        const fs = await import('fs');
-        fs.writeFileSync(filename, jsonContent);
-        console.log(`Price data exported to ${filename}`);
+      else if (typeof process !== 'undefined' && process.versions && process.versions.node) { 
+        const fs = await import('fs').then(m => m.default || m); 
+        let fileData = {}; 
+
+        try {
+          if (fs.existsSync(filename)) {
+            const fileContent = fs.readFileSync(filename, 'utf-8');
+            if (fileContent) { 
+              fileData = JSON.parse(fileContent);
+            }
+          }
+        } catch (readError) {
+          console.error(`Error reading or parsing existing file ${filename}: ${readError.message}. Will overwrite or create a new file.`);
+          fileData = {}; 
+        }
+
+        Object.keys(jsonData).forEach(market_hash_name => {
+          if (!fileData[market_hash_name]) {
+            fileData[market_hash_name] = jsonData[market_hash_name];
+          } else {
+            Object.keys(jsonData[market_hash_name]).forEach(source => {
+              const newData = jsonData[market_hash_name][source];
+              if (source === 'CSFloat') {
+                if (!Array.isArray(fileData[market_hash_name][source])) {
+                  fileData[market_hash_name][source] = [];
+                }
+                if(Array.isArray(newData)) { 
+                   fileData[market_hash_name][source] = fileData[market_hash_name][source].concat(newData);
+                }
+              } else {
+                fileData[market_hash_name][source] = newData;
+              }
+            });
+          }
+        });
+
+        try {
+          const jsonContent = JSON.stringify(fileData, null, 2);
+          fs.writeFileSync(filename, jsonContent);
+          console.log(`Price data exported to ${filename}`); 
+        } catch (writeError) {
+          console.error(`Error writing to ${filename}: ${writeError.message}`);
+        }
       } else {
           console.error("Unsupported environment for file export.");
       }
     } catch (error) {
-      console.error(`Error exporting to JSON: ${error.message}`);
+      console.error(`Error during export process: ${error.message}`); 
     }
   }
 }

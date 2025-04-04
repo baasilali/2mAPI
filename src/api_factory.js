@@ -1,5 +1,5 @@
 import CSFloatAPI from './api/csfloat.js';
-import SkinPriceAPI from './api/skinprice.js';
+import SkinPortAPI from './api/skinport.js';
 
 export default class ApiFactory {
   /**
@@ -12,6 +12,8 @@ export default class ApiFactory {
     switch (apiName.toLowerCase()) {
       case 'csfloat':
         return new CSFloatAPI(apiKey);
+      case 'skinport':
+        return new SkinPortAPI(apiKey);
       default:
         throw new Error(`Unknown API: ${apiName}`);
     }

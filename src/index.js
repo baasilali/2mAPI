@@ -7,12 +7,8 @@ import path from 'path';
 dotenv.config();
 
 async function main() {
-    // Load all 'market_hash_name's from files/skins_not_grouped.json into an array
-    const skinsFilePath = path.resolve(process.cwd(), 'files', 'skins_not_grouped.json');
-    const skinsData = JSON.parse(fs.readFileSync(skinsFilePath, 'utf8'));
-    const marketHashNames = skinsData.map(skin => skin.name);
-
-    
+    const marketHashNamesFilePath = path.resolve(process.cwd(), 'files', 'market_hash_names.txt');
+    const marketHashNames = fs.readFileSync(marketHashNamesFilePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line.length > 0);
 
     console.log("Starting price aggregation...");
 
@@ -22,8 +18,11 @@ async function main() {
         const csFloatApi = ApiFactory.createApi('csfloat', process.env.CS_FLOAT_API_KEY);
         aggregator.addApi(csFloatApi);
 
+        const skinPortApi = ApiFactory.createApi('skinport', process.env.SKIN_PORT_API_KEY);
+        aggregator.addApi(skinPortApi);
+
         console.log("Collecting and exporting data to JSON...");
-        await aggregator.exportToJson("prices_output.json");
+        await aggregator.exportToJson();
 
         console.log("Price aggregation finished successfully.");
 

@@ -1,5 +1,8 @@
 import SkinPriceAPI from './skinprice.js';
 
+import fs from 'fs';
+import path from 'path';
+
 export default class CSFloatAPI extends SkinPriceAPI {
   constructor(apiKey = null) {
     super("CSFloat", apiKey);
@@ -23,29 +26,40 @@ export default class CSFloatAPI extends SkinPriceAPI {
       Return an array of objects with the above data. There will be 1 entry for every market_hash_name.
   */
   async fetchPrices(marketHashNames) {
+    const indexFilePath = path.resolve(process.cwd(), 'src/api/utils/csfloat_api_index.txt');
+    let index = parseInt(fs.readFileSync(indexFilePath, 'utf8'));
+    
     const results = [];
-    for (const marketHashName of marketHashNames) {
+    for (const marketHashName of marketHashNames.slice(index)) {
       const url = `https://csfloat.com/api/v1/listings?page=0&limit=1&sort_by=lowest_price&market_hash_name=${marketHashName}`;
       const response = await fetch(url, {
         headers: { 'Authorization': `${this.apiKey}` }
       });
       const data = await response.json();
       if(data.code === 20) {
-        throw new Error('Rate limit hit');
+        fs.writeFileSync(indexFilePath, (index + 1).toString());
+        console.log(`Rate limit hit when searching for: ${marketHashName}`);
+        break;
       }
       if(!data || data.data.length === 0) {
         console.log(`No data found for market_hash_name: ${marketHashName}`);
+        index++;
         continue;
       }
+      index++;
       console.log(data.data[0].item.item_name);
       results.push(this.formatData(data));
     }
+    fs.writeFileSync(indexFilePath, index.toString());
     return results;
   }
 
 
   formatData(data) {
     try {
+      if(!data || !data.data || data.data.length === 0) {
+        return [];
+      }
       return data.data.map(item => ({
         item_name: item.item.item_name,
         market_hash_name: item.item.market_hash_name,
