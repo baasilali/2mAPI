@@ -10,6 +10,9 @@
     },
     "SkinPort": {
       "price": null
+    },
+    "Buff163": {
+      "price": "8500"
     }
   },
   "★ Hand Wraps | Spruce DDPAT (Minimal Wear)": {
@@ -23,6 +26,9 @@
     },
     "SkinPort": {
       "price": null
+    },
+    "Buff163": {
+      "price": "1499"
     }
   },
   "★ Hand Wraps | Spruce DDPAT (Field-Tested)": {
@@ -36,6 +42,9 @@
       "paintIndex": 10010,
       "paintSeed": 895,
       "category": "★"
+    },
+    "Buff163": {
+      "price": "1110"
     }
   },
   "★ Hand Wraps | Spruce DDPAT (Well-Worn)": {
@@ -49,6 +58,9 @@
       "paintIndex": 10010,
       "paintSeed": 582,
       "category": "★"
+    },
+    "Buff163": {
+      "price": "1034"
     }
   },
   "★ Hand Wraps | Spruce DDPAT (Battle-Scarred)": {
@@ -62,6 +74,9 @@
       "paintIndex": 10010,
       "paintSeed": 786,
       "category": "★"
+    },
+    "Buff163": {
+      "price": "994"
     }
   },
   "★ Hand Wraps | Desert Shamagh (Factory New)": {

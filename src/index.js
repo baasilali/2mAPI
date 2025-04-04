@@ -10,7 +10,7 @@ async function main() {
     const marketHashNamesFilePath = path.resolve(process.cwd(), 'data', 'market_hash_names.txt');
     const marketHashNames = fs.readFileSync(marketHashNamesFilePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line.length > 0);
 
-    const csFloatIndexFilePath = path.resolve(process.cwd(), 'api', 'data', 'csfloat', 'csfloat_api_index.txt');
+    const csFloatIndexFilePath = path.resolve(process.cwd(), 'src', 'api', 'data', 'csfloat', 'csfloat_api_index.txt');
     if (!fs.existsSync(csFloatIndexFilePath)) {
         fs.writeFileSync(csFloatIndexFilePath, '0');
     }
@@ -28,6 +28,9 @@ async function main() {
 
         // const dmarketApi = ApiFactory.createApi('dmarket', null);
         // aggregator.addApi(dmarketApi);
+
+        const buff163Api = ApiFactory.createApi('buff163', null);
+        aggregator.addApi(buff163Api);
 
         console.log("Collecting and exporting data to JSON...");
         await aggregator.exportToJson();
