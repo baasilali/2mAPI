@@ -2,6 +2,7 @@ import CSFloatAPI from './api/csfloat.js';
 import SkinPortAPI from './api/skinport.js';
 import DMarketAPI from './api/dmarket.js';
 import Buff163API from './api/buff163.js';
+import HaloSkinsAPI from './api/haloskins.js';
 
 export default class ApiFactory {
   static createApi(apiName, apiKey = null) {
@@ -14,6 +15,8 @@ export default class ApiFactory {
         return new DMarketAPI(apiKey);
       case 'buff163':
         return new Buff163API(apiKey);
+      case 'haloskins':
+        return new HaloSkinsAPI(apiKey);
       default:
         throw new Error(`Unknown API: ${apiName}`);
     }
