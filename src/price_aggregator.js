@@ -1,4 +1,4 @@
-import SkinPriceAPI from './api/skinprice.js'
+import SkinPriceAPI from './api/prices/skinprice.js'
 
 export default class PriceAggregator {
   constructor(marketHashNames) {

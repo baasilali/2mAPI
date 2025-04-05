@@ -13,7 +13,7 @@ export default class CSFloatAPI extends SkinPriceAPI {
     let index = parseInt(fs.readFileSync(indexFilePath, 'utf8'));
     
     const results = [];
-    for (const marketHashName of marketHashNames.slice(index)) {
+    for (const marketHashName of marketHashNames) {
       const url = `https://csfloat.com/api/v1/listings?page=0&limit=1&sort_by=lowest_price&market_hash_name=${marketHashName}`;
       const response = await fetch(url, {
         headers: { 'Authorization': `${this.apiKey}` }

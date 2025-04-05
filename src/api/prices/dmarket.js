@@ -1,9 +1,7 @@
 import SkinPriceAPI from './skinprice.js';
 
-import DMarketApiClient from '../utils/dmarket_signature.js';
+import DMarketApiClient from '../../utils/dmarket_signature.js';
 
-import fs from 'fs';
-import path from 'path';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -39,7 +37,7 @@ export default class DMarketAPI extends SkinPriceAPI {
 
         const formatted_data = {
             market_hash_name: marketHashName,
-            price: data.objects[0].price.USD,
+            price: data.objects[0].price.USD * 0.01,
             floatValue: data.objects[0].extra.floatValue,
             quality: data.objects[0].extra.quality,
             paintIndex: data.objects[0].extra.paintIndex,

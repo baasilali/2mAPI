@@ -97,8 +97,8 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
                 
                 const skinAndExterior = parts[1].match(/(.+) \((.+)\)/);
                 if (skinAndExterior) {
-                skinName = skinAndExterior[1];
-                exterior = skinAndExterior[2];
+                    skinName = skinAndExterior[1];
+                    exterior = skinAndExterior[2];
                 }
             } else {
                 const parts = marketHashName.split(' | ');
@@ -106,8 +106,8 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
                 
                 const skinAndExterior = parts[1].match(/(.+) \((.+)\)/);
                 if (skinAndExterior) {
-                skinName = skinAndExterior[1];
-                exterior = skinAndExterior[2];
+                    skinName = skinAndExterior[1];
+                    exterior = skinAndExterior[2];
                 }
             }
             

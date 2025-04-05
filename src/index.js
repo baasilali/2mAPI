@@ -20,20 +20,23 @@ async function main() {
     try {
         const aggregator = new PriceAggregator(marketHashNames);
 
-        // const csFloatApi = ApiFactory.createApi('csfloat', process.env.CS_FLOAT_API_KEY);
-        // aggregator.addApi(csFloatApi);
+        const csFloatApi = ApiFactory.createApi('csfloat', process.env.CS_FLOAT_API_KEY);
+        aggregator.addApi(csFloatApi);
 
-        // const skinPortApi = ApiFactory.createApi('skinport', process.env.SKIN_PORT_API_KEY);
-        // aggregator.addApi(skinPortApi);
+        const skinPortApi = ApiFactory.createApi('skinport', process.env.SKIN_PORT_API_KEY);
+        aggregator.addApi(skinPortApi);
 
-        // const dmarketApi = ApiFactory.createApi('dmarket', null);
-        // aggregator.addApi(dmarketApi);
+        const dmarketApi = ApiFactory.createApi('dmarket', null);
+        aggregator.addApi(dmarketApi);
 
-        // const buff163Api = ApiFactory.createApi('buff163', null);
-        // aggregator.addApi(buff163Api);
+        const buff163Api = ApiFactory.createApi('buff163', null);
+        aggregator.addApi(buff163Api);
 
         const haloSkinsApi = ApiFactory.createApi('haloskins', null);
         aggregator.addApi(haloSkinsApi);
+
+        const steamApi = ApiFactory.createApi('steam', null);
+        aggregator.addApi(steamApi);
 
         console.log("Collecting and exporting data to JSON...");
         await aggregator.exportToJson();
