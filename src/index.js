@@ -1,5 +1,8 @@
 import PriceAggregator from './price_aggregator.js';
 import ApiFactory from './api_factory.js';
+
+import InventoryAPI from './api/inventory/inventory.js';
+
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
@@ -18,30 +21,33 @@ async function main() {
     console.log("Starting price aggregation...");
 
     try {
-        const aggregator = new PriceAggregator(marketHashNames);
+        // const aggregator = new PriceAggregator(marketHashNames);
 
-        const csFloatApi = ApiFactory.createApi('csfloat', process.env.CS_FLOAT_API_KEY);
-        aggregator.addApi(csFloatApi);
+        // const csFloatApi = ApiFactory.createApi('csfloat', process.env.CS_FLOAT_API_KEY);
+        // aggregator.addApi(csFloatApi);
 
-        const skinPortApi = ApiFactory.createApi('skinport', process.env.SKIN_PORT_API_KEY);
-        aggregator.addApi(skinPortApi);
+        // const skinPortApi = ApiFactory.createApi('skinport', process.env.SKIN_PORT_API_KEY);
+        // aggregator.addApi(skinPortApi);
 
-        const dmarketApi = ApiFactory.createApi('dmarket', null);
-        aggregator.addApi(dmarketApi);
+        // const dmarketApi = ApiFactory.createApi('dmarket', null);
+        // aggregator.addApi(dmarketApi);
 
-        const buff163Api = ApiFactory.createApi('buff163', null);
-        aggregator.addApi(buff163Api);
+        // const buff163Api = ApiFactory.createApi('buff163', null);
+        // aggregator.addApi(buff163Api);
 
-        const haloSkinsApi = ApiFactory.createApi('haloskins', null);
-        aggregator.addApi(haloSkinsApi);
+        // const haloSkinsApi = ApiFactory.createApi('haloskins', null);
+        // aggregator.addApi(haloSkinsApi);
 
-        const steamApi = ApiFactory.createApi('steam', null);
-        aggregator.addApi(steamApi);
+        // const steamApi = ApiFactory.createApi('steam', null);
+        // aggregator.addApi(steamApi);
 
-        console.log("Collecting and exporting data to JSON...");
-        await aggregator.exportToJson();
+        // console.log("Collecting and exporting data to JSON...");
+        // await aggregator.exportToJson();
 
-        console.log("Price aggregation finished successfully.");
+        // console.log("Price aggregation finished successfully.");
+
+        const inventoryApi = new InventoryAPI();
+        const inventory = await inventoryApi.fetchInventory('76561198187191810');
 
     } catch (error) {
         console.error("An error occurred during the price aggregation process:", error);

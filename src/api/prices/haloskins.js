@@ -138,7 +138,12 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
             });
             
             const data = await response.json();
-            
+
+            // TODO: Save index in file
+            if (data.code === 61117) {
+                console.log(`${this.prefix}: Rate limit hit when searching for: ${marketHashName}`);
+                break;
+            }
 
             if(!data || !data.data) {
                 console.log(`${this.prefix}: No data found for ${marketHashName}`);
