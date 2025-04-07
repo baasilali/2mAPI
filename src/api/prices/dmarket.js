@@ -8,7 +8,7 @@ import lockfile from 'proper-lockfile';
 import dotenv from 'dotenv';
 import chalk from 'chalk';
 
-dotenv.config();
+import { workerData } from 'worker_threads';
 
 export default class DMarketAPI extends SkinPriceAPI {
   constructor(apiKey = null) {
@@ -18,8 +18,6 @@ export default class DMarketAPI extends SkinPriceAPI {
   }
 
   async fetchPrice(marketHashName) {
-    const result = [];
-
     const params = {
       gameId: "a8db",
       title: marketHashName,
@@ -50,12 +48,12 @@ export default class DMarketAPI extends SkinPriceAPI {
           source: 'DMarket'
       }
 
-      result.push(formatted_data);
+      return formatted_data;
     } catch (error) {
       console.error(chalk.red(`${this.prefix}: Error fetching prices for ${marketHashName}: ${error.message}`));
     }
     this.index++;
-    return result;
+    return null;
   }
 
   formatData(data) {
@@ -114,20 +112,22 @@ export default class DMarketAPI extends SkinPriceAPI {
 } 
 
 (async () => {
+  const dmarketApi = new DMarketAPI(null);
+  const marketHashNames = workerData;
+
   while(true) {
-    const dmarketApi = new DMarketAPI(null);
-
-    const marketHashNamesFilePath = path.resolve(process.cwd(), 'data', 'market_hash_names.txt');
-    const marketHashNames = fs.readFileSync(marketHashNamesFilePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line.length > 0);
-
     let results = [];
     for(let i = 0; i < marketHashNames.length; i++) {
-      if(i % 200 === 0) {
+      if(i % 5 === 0 && i !== 0) {
         await dmarketApi.writeToJson(results);
         await new Promise(resolve => setTimeout(resolve, 1000));
+        results = [];
       }
       const marketHashName = marketHashNames[i];
       const data = await dmarketApi.fetchPrice(marketHashName);
+      if(!data) {
+        continue;
+      }
       results.push(data);
     }
   }

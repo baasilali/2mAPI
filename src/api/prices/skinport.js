@@ -5,27 +5,30 @@ import path from 'path';
 import lockfile from 'proper-lockfile';
 import chalk from 'chalk';
 
+import { workerData } from 'worker_threads';
+
 export default class SkinPortAPI extends SkinPriceAPI {
   constructor(apiKey = null) {
     super("SkinPort", apiKey);
-  }
 
-  async fetchPrices(marketHashNames) {
     const filePath = path.resolve(process.cwd(), 'data/skinport/skinport_data.json');
-    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    const result = [];
-    for (const marketHashName of marketHashNames) {
-      const item = data.find(item => item.market_hash_name === marketHashName);
-      if (item) {
-        console.log(chalk.green(`${this.prefix}: Found value for ${marketHashName}`));
-        result.push({ market_hash_name: item.market_hash_name, price: item.min_price });
-      } else {
-        console.warn(chalk.yellow(`${this.prefix}: No data found for ${marketHashName}`));
-      }
-    }
-    return result;
+    this.skinportData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   }
 
+  fetchPrice(marketHashName) {
+    const item = this.skinportData.find(item => item.market_hash_name === marketHashName);
+    if (item && item.min_price) {
+      console.log(chalk.green(`${this.prefix}: Found value for ${marketHashName}`));
+      return { 
+        market_hash_name: item.market_hash_name, 
+        price: item.min_price, 
+        source: 'SkinPort' 
+      };
+    } else {
+      console.warn(chalk.yellow(`${this.prefix}: No data found for ${marketHashName}`));
+      return null;
+    }
+  }
 
   formatData(data) {
     return data.map(item => ({
@@ -83,13 +86,26 @@ export default class SkinPortAPI extends SkinPriceAPI {
 } 
 
 (async () => {
-  const skinportApi = new SkinPortAPI(process.env.SKIN_PORT_API_KEY);
+  const skinportApi = new SkinPortAPI(null);
+  const marketHashNames = workerData;
 
-  const marketHashNamesFilePath = path.resolve(process.cwd(), 'data', 'market_hash_names.txt');
-  const marketHashNames = fs.readFileSync(marketHashNamesFilePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line.length > 0);
+  while(true) {
+    let results = [];
+    for(let i = 0; i < marketHashNames.length; i++) {
+      const marketHashName = marketHashNames[i];
+      const data = skinportApi.fetchPrice(marketHashName);
 
-  const data = await skinportApi.fetchPrices(marketHashNames);
-  const formatted_data = skinportApi.formatData(data);
+      if(!data) {
+        continue;
+      }
 
-  await skinportApi.writeToJson(formatted_data);
+      results.push(data);
+
+      if(i % 5 === 0 && i !== 0) {
+        await skinportApi.writeToJson(results);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        results = [];
+      }
+    }
+  }
 })();
