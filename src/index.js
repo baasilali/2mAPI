@@ -1,11 +1,7 @@
-import PriceAggregator from './price_aggregator.js';
-import ApiFactory from './api_factory.js';
-
-import InventoryAPI from './api/inventory/inventory.js';
-
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import { Worker } from 'node:worker_threads';
 
 dotenv.config();
 
@@ -46,8 +42,17 @@ async function main() {
 
         // console.log("Price aggregation finished successfully.");
 
-        const inventoryApi = new InventoryAPI();
-        const inventory = await inventoryApi.fetchInventory('76561198187191810');
+        const workers = ["dmarket"];
+        for(const worker of workers) {
+            const workerThread = new Worker(path.resolve(process.cwd(), 'src/api/prices/', `${worker}.js`), {
+                workerData: marketHashNames
+            });
+
+            workerThread.on('error', console.error);
+            workerThread.on('exit', code => {                
+                if (code !== 0) console.log(`Worker '${worker}' exited with code ${code}`);
+            });
+        }
 
     } catch (error) {
         console.error("An error occurred during the price aggregation process:", error);

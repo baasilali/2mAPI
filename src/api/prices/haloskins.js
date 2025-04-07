@@ -2,9 +2,8 @@ import SkinPriceAPI from './skinprice.js';
 
 import fs from 'fs';
 import path from 'path';
-import dotenv from 'dotenv';
-
-dotenv.config();
+import lockfile from 'proper-lockfile';
+import chalk from 'chalk';
 
 export default class HaloSkinsAPI extends SkinPriceAPI {
   constructor(apiKey = null) {
@@ -141,23 +140,23 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
 
             // TODO: Save index in file
             if (data.code === 61117) {
-                console.log(`${this.prefix}: Rate limit hit when searching for: ${marketHashName}`);
+                console.error(chalk.red(`${this.prefix}: Rate limit hit when searching for: ${marketHashName}`));
                 break;
             }
 
             if(!data || !data.data) {
-                console.log(`${this.prefix}: No data found for ${marketHashName}`);
+                console.warn(chalk.yellow(`${this.prefix}: No data found for ${marketHashName}`));
             } else {
                 results.push({
                     market_hash_name: marketHashName,
                     price: data.data.list[0].manualPrice,
                     source: 'HaloSkins'
                 });
-                console.log(`${this.prefix}: Found value for ${marketHashName}`);
+                console.log(chalk.green(`${this.prefix}: Found value for ${marketHashName}`));
             }
 
         } catch (error) {
-            console.error(`${this.prefix}: Error fetching data for ${marketHashName}: ${error.message}`);
+            console.error(chalk.red(`${this.prefix}: Error fetching data for ${marketHashName}: ${error.message}`));
         }
     }
     
@@ -166,9 +165,68 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
 
   formatData(data) {
     if (!data) {
-        console.log(`${this.prefix}: No data found`);
+        console.warn(chalk.yellow(`${this.prefix}: No data found`));
         return [];
     }
     return data;
   }
+
+  async writeToJson(data) {
+    const filePath = path.resolve(process.cwd(), 'prices_output.json');
+    
+    try {
+      if (!fs.existsSync(filePath)) {
+        fs.writeFileSync(filePath, '{}', 'utf8');
+      }
+      
+      await lockfile.lock(filePath, { retries: 5, retryWait: 1000 });
+      
+      let existingData = {};
+      try {
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        existingData = JSON.parse(fileContent);
+      } catch (error) {
+        console.error(`${this.prefix}: Error reading prices_output.json: ${error.message}`);
+      }
+      
+      // Process data to create the proper structure
+      for (const item of data) {
+        if (!existingData[item.market_hash_name]) {
+          existingData[item.market_hash_name] = {};
+        }
+        
+        existingData[item.market_hash_name][this.apiName] = {
+          price: item.price,
+          ...Object.fromEntries(
+            Object.entries(item).filter(([key]) => 
+              !['market_hash_name', 'source'].includes(key) && key !== 'price'
+            )
+          )
+        };
+      }
+      
+      fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2), 'utf8');
+      console.log(`${this.prefix}: Successfully wrote data to prices_output.json`);
+    } catch (error) {
+      console.error(`${this.prefix}: Error writing to prices_output.json: ${error.message}`);
+    } finally {
+      try {
+        await lockfile.unlock(filePath);
+      } catch (unlockError) {
+        console.error(`${this.prefix}: Error unlocking file: ${unlockError.message}`);
+      }
+    }
+  }
 } 
+
+(async () => {
+  const haloskinsApi = new HaloSkinsAPI(null);
+
+  const marketHashNamesFilePath = path.resolve(process.cwd(), 'data', 'market_hash_names.txt');
+  const marketHashNames = fs.readFileSync(marketHashNamesFilePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line.length > 0);
+
+  const data = await haloskinsApi.fetchPrices(marketHashNames);
+  const formatted_data = haloskinsApi.formatData(data);
+
+  await haloskinsApi.writeToJson(formatted_data);
+})();
