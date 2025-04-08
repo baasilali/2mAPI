@@ -1,5 +1,4 @@
 import nacl from 'tweetnacl';
-import crypto from 'crypto';
 
 class DMarketApiClient {
     constructor(publicKey, secretKey) {
