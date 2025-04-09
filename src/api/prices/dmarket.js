@@ -35,6 +35,12 @@ export default class DMarketAPI extends SkinPriceAPI {
       });
       
       const data = await response.json();
+
+      if(!data || !data.objects || data.objects.length === 0) {
+        console.warn(chalk.yellow(`${this.prefix}: No data found for market_hash_name: ${marketHashName}`));
+        return null;
+      }
+
       console.log(chalk.green(`${this.prefix}: Found value for ${marketHashName}`));
 
       const formatted_data = {

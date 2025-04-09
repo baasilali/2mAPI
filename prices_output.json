@@ -716,7 +716,7 @@
         "price": 202.4
       },
       "CSFloat": {
-        "price": 176.54,
+        "price": 177.42000000000002,
         "float": 0.3860424757003784,
         "rarity": 6,
         "paint_index": 10054,
@@ -894,11 +894,43 @@
     "Field-Tested": {
       "SkinPort": {
         "price": 216.42
+      },
+      "CSFloat": {
+        "price": 223,
+        "float": 0.36361590027809143,
+        "rarity": 6,
+        "paint_index": 10009,
+        "paint_seed": 527,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Battle-Scarred": {
       "SkinPort": {
         "price": 250.46
+      },
+      "CSFloat": {
+        "price": 214.99,
+        "float": 0.6663680672645569,
+        "rarity": 6,
+        "paint_index": 10009,
+        "paint_seed": 815,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Well-Worn": {
+      "CSFloat": {
+        "price": 193,
+        "float": 0.4376864433288574,
+        "rarity": 6,
+        "paint_index": 10009,
+        "paint_seed": 14,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     }
   },
@@ -911,21 +943,61 @@
     "Minimal Wear": {
       "SkinPort": {
         "price": 152.47
+      },
+      "CSFloat": {
+        "price": 136.70000000000002,
+        "float": 0.11157628893852234,
+        "rarity": 6,
+        "paint_index": 10083,
+        "paint_seed": 643,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Field-Tested": {
       "SkinPort": {
         "price": 129.8
+      },
+      "CSFloat": {
+        "price": 112.97,
+        "float": 0.3169384300708771,
+        "rarity": 6,
+        "paint_index": 10083,
+        "paint_seed": 399,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Well-Worn": {
       "SkinPort": {
         "price": 108.29
+      },
+      "CSFloat": {
+        "price": 109.59,
+        "float": 0.4374522566795349,
+        "rarity": 6,
+        "paint_index": 10083,
+        "paint_seed": 477,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Battle-Scarred": {
       "SkinPort": {
         "price": 118.58
+      },
+      "CSFloat": {
+        "price": 103.68,
+        "float": 0.736473023891449,
+        "rarity": 6,
+        "paint_index": 10083,
+        "paint_seed": 194,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     }
   },
@@ -933,16 +1005,58 @@
     "Minimal Wear": {
       "SkinPort": {
         "price": 701.8
+      },
+      "CSFloat": {
+        "price": 624,
+        "float": 0.13784897327423096,
+        "rarity": 6,
+        "paint_index": 10021,
+        "paint_seed": 472,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Field-Tested": {
       "SkinPort": {
         "price": 395.91
+      },
+      "CSFloat": {
+        "price": 334.99,
+        "float": 0.37258386611938477,
+        "rarity": 6,
+        "paint_index": 10021,
+        "paint_seed": 807,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Battle-Scarred": {
       "SkinPort": {
         "price": 290.98
+      },
+      "CSFloat": {
+        "price": 244.89000000000001,
+        "float": 0.49172526597976685,
+        "rarity": 6,
+        "paint_index": 10021,
+        "paint_seed": 439,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Well-Worn": {
+      "CSFloat": {
+        "price": 270.04,
+        "float": 0.38728073239326477,
+        "rarity": 6,
+        "paint_index": 10021,
+        "paint_seed": 366,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     }
   },
@@ -950,21 +1064,73 @@
     "Minimal Wear": {
       "SkinPort": {
         "price": 376.11
+      },
+      "CSFloat": {
+        "price": 285.40000000000003,
+        "float": 0.14988818764686584,
+        "rarity": 6,
+        "paint_index": 10024,
+        "paint_seed": 45,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Field-Tested": {
       "SkinPort": {
         "price": 195.66
+      },
+      "CSFloat": {
+        "price": 165.36,
+        "float": 0.359904944896698,
+        "rarity": 6,
+        "paint_index": 10024,
+        "paint_seed": 756,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Well-Worn": {
       "SkinPort": {
         "price": 163.94
+      },
+      "CSFloat": {
+        "price": 145.06,
+        "float": 0.38958123326301575,
+        "rarity": 6,
+        "paint_index": 10024,
+        "paint_seed": 131,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Battle-Scarred": {
       "SkinPort": {
         "price": 152.89
+      },
+      "CSFloat": {
+        "price": 139.99,
+        "float": 0.6623697876930237,
+        "rarity": 6,
+        "paint_index": 10024,
+        "paint_seed": 189,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Factory New": {
+      "CSFloat": {
+        "price": 1135.8500000000001,
+        "float": 0.06393923610448837,
+        "rarity": 6,
+        "paint_index": 10024,
+        "paint_seed": 413,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     }
   },
@@ -972,26 +1138,76 @@
     "Factory New": {
       "SkinPort": {
         "price": 860.27
+      },
+      "CSFloat": {
+        "price": 999.9,
+        "float": 0.06781350821256638,
+        "rarity": 6,
+        "paint_index": 10050,
+        "paint_seed": 294,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Minimal Wear": {
       "SkinPort": {
         "price": 308.36
+      },
+      "CSFloat": {
+        "price": 249.27,
+        "float": 0.13878676295280457,
+        "rarity": 6,
+        "paint_index": 10050,
+        "paint_seed": 807,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Field-Tested": {
       "SkinPort": {
         "price": 162.49
+      },
+      "CSFloat": {
+        "price": 155.09,
+        "float": 0.36236828565597534,
+        "rarity": 6,
+        "paint_index": 10050,
+        "paint_seed": 831,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Well-Worn": {
       "SkinPort": {
         "price": 156.86
+      },
+      "CSFloat": {
+        "price": 139.39000000000001,
+        "float": 0.3859513998031616,
+        "rarity": 6,
+        "paint_index": 10050,
+        "paint_seed": 299,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Battle-Scarred": {
       "SkinPort": {
         "price": 136.12
+      },
+      "CSFloat": {
+        "price": 137.49,
+        "float": 0.6343839168548584,
+        "rarity": 6,
+        "paint_index": 10050,
+        "paint_seed": 75,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     }
   },
@@ -999,21 +1215,61 @@
     "Factory New": {
       "SkinPort": {
         "price": 1088.94
+      },
+      "CSFloat": {
+        "price": 899,
+        "float": 0.06474895030260086,
+        "rarity": 6,
+        "paint_index": 10079,
+        "paint_seed": 546,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Minimal Wear": {
       "SkinPort": {
         "price": 348.86
+      },
+      "CSFloat": {
+        "price": 345,
+        "float": 0.13977132737636566,
+        "rarity": 6,
+        "paint_index": 10079,
+        "paint_seed": 725,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Field-Tested": {
       "SkinPort": {
         "price": 211.26
+      },
+      "CSFloat": {
+        "price": 196,
+        "float": 0.36806049942970276,
+        "rarity": 6,
+        "paint_index": 10079,
+        "paint_seed": 260,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Well-Worn": {
       "SkinPort": {
         "price": 182.31
+      },
+      "CSFloat": {
+        "price": 170.57,
+        "float": 0.3805094063282013,
+        "rarity": 6,
+        "paint_index": 10079,
+        "paint_seed": 450,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
       }
     },
     "Battle-Scarred": {
@@ -1604,6 +1860,2912 @@
     "Battle-Scarred": {
       "SkinPort": {
         "price": 170.58
+      }
+    }
+  },
+  "★ Specialist Gloves | Buckshot": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 435.04
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 135.52
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 114.34
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 108.84
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 114.82
+      }
+    }
+  },
+  "★ Specialist Gloves | Crimson Kimono": {
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 3289
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1850.13
+      }
+    }
+  },
+  "★ Specialist Gloves | Marble Fade": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 2722.38
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 843.94
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 289.29
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 253.85
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 202.28
+      }
+    }
+  },
+  "★ Specialist Gloves | Foundation": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 829.69
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 330.69
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 249.57
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 199.79
+      }
+    }
+  },
+  "★ Specialist Gloves | Lt. Commander": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 412.71
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 219.5
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 193.56
+      }
+    }
+  },
+  "★ Specialist Gloves | Tiger Strike": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 2333.21
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 919.16
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 460.61
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 399.74
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 210.96
+      }
+    }
+  },
+  "★ Specialist Gloves | Crimson Web": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 2188.79
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 689.81
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 283.39
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 240.45
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 197.79
+      }
+    }
+  },
+  "★ Specialist Gloves | Mogul": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 947.32
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 352.47
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 202.39
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 186.23
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 166.97
+      }
+    }
+  },
+  "★ Sport Gloves | Omega": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 3299.26
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1088.95
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 456.57
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 361.52
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 294.02
+      }
+    }
+  },
+  "★ Sport Gloves | Vice": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 17423.2
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 4083.51
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 1088.75
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 923.05
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 652.74
+      }
+    }
+  },
+  "★ Sport Gloves | Hedge Maze": {
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 7437.19
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 4859.37
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 3647.98
+      }
+    }
+  },
+  "★ Sport Gloves | Scarlet Shamagh": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1428.64
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 626.15
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 343.81
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 341.89
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 257
+      }
+    }
+  },
+  "★ Sport Gloves | Big Game": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 413.8
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 270.15
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 254.8
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 212.52
+      }
+    }
+  },
+  "★ Sport Gloves | Nocts": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 3647.7
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1051.46
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 708.39
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 588.97
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 468.68
+      }
+    }
+  },
+  "★ Sport Gloves | Superconductor": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 5657.41
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 3157.94
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 2377.73
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1473.15
+      }
+    }
+  },
+  "★ Sport Gloves | Arid": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1550.95
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 684.85
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 515.94
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 340.82
+      }
+    }
+  },
+  "★ Sport Gloves | Amphibious": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 6030.45
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1491.62
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 742.62
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 631.58
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 509.1
+      }
+    }
+  },
+  "★ Sport Gloves | Bronze Morph": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 250.46
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 162.22
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 174.23
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 177.88
+      }
+    }
+  },
+  "★ Sport Gloves | Pandora's Box": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 11431.64
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 6580.69
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 6474.78
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 3494.28
+      }
+    }
+  },
+  "★ Sport Gloves | Slingshot": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 2277.01
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 851.74
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 738.72
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 415.37
+      }
+    }
+  },
+  "★ Bloodhound Gloves | Charred": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1088.46
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 271.53
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 141.71
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 167.47
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 134.59
+      }
+    }
+  },
+  "★ Bloodhound Gloves | Guerrilla": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 162.25
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 100.85
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 117.6
+      }
+    }
+  },
+  "★ Bloodhound Gloves | Bronzed": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 171.51
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 104.23
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 93.79
+      }
+    }
+  },
+  "★ Bloodhound Gloves | Snakebite": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 148.1
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 93.74
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 141.56
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 103.64
+      }
+    }
+  },
+  "★ Broken Fang Gloves | Needle Point": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 404.8
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 137.87
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 101.51
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 108.9
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 99.29
+      }
+    }
+  },
+  "★ Broken Fang Gloves | Jade": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 830.55
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 216.85
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 144.12
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 131.77
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 129.36
+      }
+    }
+  },
+  "★ Broken Fang Gloves | Yellow-banded": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 490.03
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 150.45
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 98.01
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 99.09
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 90.79
+      }
+    }
+  },
+  "★ Broken Fang Gloves | Unhinged": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 148.5
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 101.89
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 107.27
+      }
+    }
+  },
+  "★ Hydra Gloves | Emerald": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 521.9
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 131.86
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 77.56
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 87.52
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 80.96
+      }
+    }
+  },
+  "★ Hydra Gloves | Case Hardened": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 646.14
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 198.09
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 136.88
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 137.84
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 129.03
+      }
+    }
+  },
+  "★ Hydra Gloves | Mangrove": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 100.66
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 67.79
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 77.24
+      }
+    }
+  },
+  "★ Hydra Gloves | Rattler": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 310.35
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 95.83
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 66.38
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 69.68
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 62.89
+      }
+    }
+  },
+  "AK-47 | The Outsiders": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 79.7
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 22.56
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 10.45
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 10
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 8.86
+      }
+    }
+  },
+  "StatTrak™ AK-47 | The Outsiders": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 129.1
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 50.08
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 23.07
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 27.28
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 25.05
+      }
+    }
+  },
+  "AK-47 | Inheritance": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 205.06
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 141.68
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 100.18
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 96.14
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 80.73
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Inheritance": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 455.3
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 258.49
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 163.34
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 150.45
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 124.13
+      }
+    }
+  },
+  "AK-47 | Hydroponic": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 2524.72
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1851.2
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 1197.85
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 1181.67
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 725.23
+      }
+    }
+  },
+  "AK-47 | Cartel": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 35.79
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 19.52
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 16.33
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 19.88
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 18.51
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Cartel": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 107.89
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 61.43
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 52.07
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 67.6
+      }
+    }
+  },
+  "AK-47 | Case Hardened": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 367.63
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 281.29
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 248.73
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 205.08
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 205.62
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Case Hardened": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 827.51
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 536.36
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 414
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 424.69
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 320.97
+      }
+    }
+  },
+  "AK-47 | Phantom Disruptor": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 13.07
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 6.74
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 4.92
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 5.46
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 4.19
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Phantom Disruptor": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 33.1
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 19.23
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 12.28
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 15.29
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 12.52
+      }
+    }
+  },
+  "AK-47 | Neon Revolution": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 93.48
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 34.35
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 20.24
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 27.22
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 20.24
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Neon Revolution": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 176.41
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 81.22
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 54.24
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 64.64
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 63.03
+      }
+    }
+  },
+  "AK-47 | Legion of Anubis": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 16.37
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 10.17
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 6.53
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 7.99
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 5.79
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Legion of Anubis": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 53.18
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 31.96
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 20.29
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 24.86
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 19.52
+      }
+    }
+  },
+  "AK-47 | Asiimov": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 188.55
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 58.93
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 32.27
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 34.66
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 30.49
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Asiimov": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 434.49
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 117.05
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 67.74
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 102.79
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 71.06
+      }
+    }
+  },
+  "AK-47 | Uncharted": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1.31
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 0.64
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 0.38
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 0.94
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 0.42
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Uncharted": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 7.1
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 3.16
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 2.57
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 3.27
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 2.38
+      }
+    }
+  },
+  "AK-47 | Redline": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 177.19
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 37.42
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 29.68
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 29.79
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Redline": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 326.69
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 83.79
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 64.88
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 53.14
+      }
+    }
+  },
+  "AK-47 | Ice Coaled": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 14.37
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 8.07
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 4.81
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 5.96
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 4.04
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Ice Coaled": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 44.29
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 22.87
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 12.7
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 14.93
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 11.97
+      }
+    }
+  },
+  "AK-47 | Aquamarine Revenge": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 129.89
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 81.65
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 38.11
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 30.25
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 28.63
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Aquamarine Revenge": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 277.67
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 174.23
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 99.34
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 71.78
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 92.73
+      }
+    }
+  },
+  "AK-47 | Elite Build": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 7.46
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 2.67
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 1.63
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 1.26
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1.24
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Elite Build": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 30.8
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 9.77
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 5.24
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 4.17
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 4.75
+      }
+    }
+  },
+  "AK-47 | Nightwish": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 51.89
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 16.25
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 8.71
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 6.99
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 5.91
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Nightwish": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 124.59
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 46.76
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 22.2
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 19.42
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 20.24
+      }
+    }
+  },
+  "AK-47 | Point Disarray": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 39.92
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 20.17
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 11.97
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 13.58
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 12.22
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Point Disarray": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 108.96
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 55.82
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 37.67
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 35.5
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 317.19
+      }
+    }
+  },
+  "AK-47 | Vulcan": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 758.46
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 510.72
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 247.75
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 174.23
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 166.27
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Vulcan": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1619.2
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 910.8
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 455.4
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 310.85
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 212.35
+      }
+    }
+  },
+  "AK-47 | Frontside Misty": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 73.28
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 27.49
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 16.08
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 14.2
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 15.05
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Frontside Misty": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 144.83
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 70.84
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 40.82
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 39.8
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 34.65
+      }
+    }
+  },
+  "AK-47 | Head Shot": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 50.75
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 16.32
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 8.42
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 7.12
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 6.08
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Head Shot": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 135.26
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 52.79
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 25.05
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 22.74
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 21.34
+      }
+    }
+  },
+  "AK-47 | Wild Lotus": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 12113.41
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 11787.75
+      }
+    }
+  },
+  "AK-47 | Panthera onca": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 294.02
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 269.52
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 213.01
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 434.49
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 194.37
+      }
+    }
+  },
+  "Souvenir AK-47 | Panthera onca": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1153.35
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 250.64
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 206.89
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 125.23
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 111.52
+      }
+    }
+  },
+  "AK-47 | Neon Rider": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 158.91
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 85.59
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 44.09
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 53.48
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 39
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Neon Rider": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 361.13
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 182.16
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 107.98
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 112.34
+      }
+    }
+  },
+  "AK-47 | X-Ray": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1315.6
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 722.66
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 490.03
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 342.83
+      }
+    }
+  },
+  "AK-47 | Fire Serpent": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 2464.97
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 1227.8
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 860.21
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 861.25
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 643.72
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Fire Serpent": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 5665.23
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 2932.53
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 2123.45
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 1610.03
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1087.86
+      }
+    }
+  },
+  "AK-47 | Crossfade": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 3.34
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 2.61
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 2.12
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 2.42
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1.87
+      }
+    }
+  },
+  "AK-47 | First Class": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 165.48
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 132.38
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 100.18
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 125.23
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 206.84
+      }
+    }
+  },
+  "AK-47 | B the Monster": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 742.47
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 401.19
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 238.48
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 254.45
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 142.01
+      }
+    }
+  },
+  "AK-47 | Jaguar": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 233.44
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 131.56
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 91.08
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 62.32
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 62.75
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Jaguar": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 661.85
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 253
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 190.57
+      }
+    }
+  },
+  "AK-47 | Emerald Pinstripe": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 24.2
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 5.91
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 4.36
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 4.9
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 2.47
+      }
+    }
+  },
+  "AK-47 | Wasteland Rebel": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 217.79
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 62.09
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 39.52
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 53.36
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 40.51
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Wasteland Rebel": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 5661.45
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 156.98
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 118.4
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 118.41
+      }
+    }
+  },
+  "AK-47 | Jet Set": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 913.72
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 448.39
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 359.35
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 287.73
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 278.42
+      }
+    }
+  },
+  "AK-47 | Leet Museo": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 187.22
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 48.73
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 33.72
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 30.48
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 24.9
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Leet Museo": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 208.37
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 99.91
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 75.82
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 72.98
+      }
+    }
+  },
+  "AK-47 | Bloodsport": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 188.8
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 168.04
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 152.45
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 147.01
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Bloodsport": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 381.12
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 316.73
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 253
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 234.12
+      }
+    }
+  },
+  "AK-47 | The Empress": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 161.16
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 63.16
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 42.5
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 34.41
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 33.05
+      }
+    }
+  },
+  "StatTrak™ AK-47 | The Empress": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 340.75
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 147.81
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 93.61
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 75.14
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 76.26
+      }
+    }
+  },
+  "AK-47 | Gold Arabesque": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 3890.62
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 3103.51
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 2439.4
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 2304.39
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1652.3
+      }
+    }
+  },
+  "Souvenir AK-47 | Gold Arabesque": {
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 2176.81
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 1821.6
+      }
+    }
+  },
+  "AK-47 | Rat Rod": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 20.23
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 6.09
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 3.85
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 3.59
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 3.63
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Rat Rod": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 43.44
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 19.75
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 12.42
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 12.63
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 11.62
+      }
+    }
+  },
+  "AK-47 | Slate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 13.96
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 6.33
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 3.94
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 3.08
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 3.07
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Slate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 52.79
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 22.61
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 13.85
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 11.99
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 13.07
+      }
+    }
+  },
+  "AK-47 | Steel Delta": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 3.36
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 2.27
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 1.42
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 1.98
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 2.4
+      }
+    }
+  },
+  "Souvenir AK-47 | Steel Delta": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 17.78
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 8.04
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 8.2
+      }
+    }
+  },
+  "AK-47 | Fuel Injector": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 435.58
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 261.85
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 205.08
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 180.77
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 162.33
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Fuel Injector": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 811.15
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 532.99
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 352.97
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 295.42
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 267.14
+      }
+    }
+  },
+  "AK-47 | Orbit Mk01": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 34.85
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 24.78
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 22.12
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 27.21
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 23.7
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Orbit Mk01": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 93.25
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 63.3
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 52.63
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 48.69
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 60.37
+      }
+    }
+  },
+  "AK-47 | Olive Polycam": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 0.58
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 0.28
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 0.24
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 0.25
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 0.16
+      }
+    }
+  },
+  "AK-47 | Blue Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 18.51
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 15.53
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 13.61
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 17.72
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Blue Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 65.33
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 36.73
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 42.03
+      }
+    }
+  },
+  "AK-47 | Black Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 179.12
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 44.43
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 43.47
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 40.67
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 45.75
+      }
+    }
+  },
+  "Souvenir AK-47 | Black Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 669.7
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 65.66
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 43.56
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 51.83
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 51.53
+      }
+    }
+  },
+  "AK-47 | Green Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 28.57
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 24.88
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 22.77
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 36.48
+      }
+    }
+  },
+  "Souvenir AK-47 | Green Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 30.76
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 26.58
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 20.24
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 36.93
+      }
+    }
+  },
+  "AK-47 | Red Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 379.5
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 112.15
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 59.71
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 65.71
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 66.24
+      }
+    }
+  },
+  "StatTrak™ AK-47 | Red Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1252.28
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 261.35
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 155.37
+      }
+    }
+  },
+  "AK-47 | Safety Net": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 7.06
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 4.67
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 3.16
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 3.85
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 3.39
+      }
+    }
+  },
+  "Souvenir AK-47 | Safety Net": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 63.28
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 28.18
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 21.81
+      }
+    }
+  },
+  "AK-47 | Baroque Purple": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 20.41
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 8.54
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 7.61
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 6.86
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 7.08
+      }
+    }
+  },
+  "AK-47 | Nouveau Rouge": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 653.37
+      }
+    }
+  },
+  "AK-47 | Midnight Laminate": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 175.18
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 106.26
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 53.97
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 26.37
       }
     }
   }
