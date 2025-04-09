@@ -44,11 +44,11 @@
         "price": 218.12
       },
       "DMarket": {
-        "price": 237.91,
-        "floatValue": 0.138022318482399,
+        "price": 237.9,
+        "floatValue": 0.146637424826622,
         "quality": "extraordinary",
         "paintIndex": 10010,
-        "paintSeed": 971,
+        "paintSeed": 132,
         "category": "★"
       }
     },
@@ -57,7 +57,7 @@
         "price": 163.8
       },
       "SkinPort": {
-        "price": 159.14
+        "price": 168.99
       },
       "CSFloat": {
         "price": 154.75,
@@ -76,11 +76,11 @@
         "price": 162.59
       },
       "DMarket": {
-        "price": 151.86,
-        "floatValue": 0.36965274810791016,
+        "price": 158.15,
+        "floatValue": 0.21121861040592194,
         "quality": "extraordinary",
         "paintIndex": 10010,
-        "paintSeed": 432,
+        "paintSeed": 20,
         "category": "★"
       }
     },
@@ -105,11 +105,11 @@
         "price": 142.15
       },
       "DMarket": {
-        "price": 155.34,
-        "floatValue": 0.38458558917045593,
+        "price": 155.33,
+        "floatValue": 0.4245961606502533,
         "quality": "extraordinary",
         "paintIndex": 10010,
-        "paintSeed": 256,
+        "paintSeed": 786,
         "category": "★"
       }
     },
@@ -149,7 +149,7 @@
   "★ Hand Wraps | Desert Shamagh": {
     "Minimal Wear": {
       "SkinPort": {
-        "price": 150.23
+        "price": 146.16
       },
       "CSFloat": {
         "price": 139.04,
@@ -181,7 +181,7 @@
     },
     "Field-Tested": {
       "SkinPort": {
-        "price": 107.26
+        "price": 111.4
       },
       "CSFloat": {
         "price": 94.93,
@@ -213,7 +213,7 @@
     },
     "Well-Worn": {
       "SkinPort": {
-        "price": 109.86
+        "price": 111.14
       },
       "CSFloat": {
         "price": 98.01,
@@ -284,7 +284,7 @@
   "★ Hand Wraps | Badlands": {
     "Factory New": {
       "SkinPort": {
-        "price": 715.93
+        "price": 1619.2
       },
       "CSFloat": {
         "price": 650,
@@ -373,7 +373,7 @@
     },
     "Battle-Scarred": {
       "SkinPort": {
-        "price": 143.95
+        "price": 149.39
       },
       "CSFloat": {
         "price": 146.98,
@@ -401,7 +401,7 @@
   "★ Hand Wraps | CAUTION!": {
     "Factory New": {
       "SkinPort": {
-        "price": 1174.08
+        "price": 1101.55
       },
       "CSFloat": {
         "price": 991.4300000000001,
@@ -419,7 +419,7 @@
     },
     "Minimal Wear": {
       "SkinPort": {
-        "price": 404.8
+        "price": 394.69
       },
       "CSFloat": {
         "price": 370.83,
@@ -440,7 +440,7 @@
     },
     "Field-Tested": {
       "SkinPort": {
-        "price": 231.34
+        "price": 255.32
       },
       "CSFloat": {
         "price": 227.89000000000001,
@@ -461,7 +461,7 @@
     },
     "Well-Worn": {
       "SkinPort": {
-        "price": 237.58
+        "price": 252.24
       },
       "CSFloat": {
         "price": 232.09,
@@ -505,7 +505,7 @@
   "★ Hand Wraps | Duct Tape": {
     "Minimal Wear": {
       "SkinPort": {
-        "price": 153.57
+        "price": 167.05
       },
       "CSFloat": {
         "price": 137.66,
@@ -523,7 +523,7 @@
     },
     "Field-Tested": {
       "SkinPort": {
-        "price": 119.04
+        "price": 126.93
       },
       "CSFloat": {
         "price": 109.44,
@@ -541,7 +541,7 @@
     },
     "Well-Worn": {
       "SkinPort": {
-        "price": 131.97
+        "price": 147.96
       },
       "CSFloat": {
         "price": 118.99000000000001,
@@ -559,7 +559,7 @@
     },
     "Battle-Scarred": {
       "SkinPort": {
-        "price": 114.34
+        "price": 131.95
       },
       "CSFloat": {
         "price": 109.67,
