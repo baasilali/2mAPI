@@ -19,11 +19,12 @@ export default class SkinPortAPI extends SkinPriceAPI {
     const item = this.skinportData.find(item => item.market_hash_name === marketHashName);
     if (item && item.min_price) {
       console.log(chalk.green(`${this.prefix}: Found value for ${marketHashName}`));
-      return { 
+      const data = { 
         market_hash_name: item.market_hash_name, 
         price: item.min_price, 
         source: 'SkinPort' 
       };
+      return data;
     } else {
       console.warn(chalk.yellow(`${this.prefix}: No data found for ${marketHashName}`));
       return null;
@@ -55,13 +56,20 @@ export default class SkinPortAPI extends SkinPriceAPI {
         console.error(`${this.prefix}: Error reading prices_output.json: ${error.message}`);
       }
       
-      // Process data to create the proper structure
       for (const item of data) {
-        if (!existingData[item.market_hash_name]) {
-          existingData[item.market_hash_name] = {};
+        const nameWithoutWear = item.market_hash_name.split('(')[0].trim();
+        const wearMatch = item.market_hash_name.match(/\((.*?)\)$/);
+        const wearCondition = wearMatch ? wearMatch[1] : '';
+
+        if (!existingData[nameWithoutWear]) {
+          existingData[nameWithoutWear] = {};
         }
         
-        existingData[item.market_hash_name][this.apiName] = {
+        if (!existingData[nameWithoutWear][wearCondition]) {
+          existingData[nameWithoutWear][wearCondition] = {};
+        }
+        
+        existingData[nameWithoutWear][wearCondition][this.apiName] = {
           price: item.price,
           ...Object.fromEntries(
             Object.entries(item).filter(([key]) => 
@@ -92,6 +100,12 @@ export default class SkinPortAPI extends SkinPriceAPI {
   while(true) {
     let results = [];
     for(let i = 0; i < marketHashNames.length; i++) {
+      if(i % 200 === 0 && i !== 0) {
+        await skinportApi.writeToJson(results);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        results = [];
+      }
+
       const marketHashName = marketHashNames[i];
       const data = skinportApi.fetchPrice(marketHashName);
 
@@ -100,12 +114,8 @@ export default class SkinPortAPI extends SkinPriceAPI {
       }
 
       results.push(data);
-
-      if(i % 5 === 0 && i !== 0) {
-        await skinportApi.writeToJson(results);
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        results = [];
-      }
     }
+    await skinportApi.writeToJson(results);
+    await new Promise(resolve => setTimeout(resolve, 1000));
   }
 })();

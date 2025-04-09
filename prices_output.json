@@ -1,27 +1,998 @@
 {
-  "★ Hand Wraps | Spruce DDPAT (Field-Tested)": {
-    "Buff163": {
-      "price": 157.36
+  "★ Hand Wraps | Spruce DDPAT": {
+    "Factory New": {
+      "Buff163": {
+        "price": 1190
+      },
+      "CSFloat": {
+        "price": 900,
+        "float": 0.0625077337026596,
+        "rarity": 6,
+        "paint_index": 10010,
+        "paint_seed": 259,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "DMarket": {
+        "price": 1280.44,
+        "floatValue": 0.06888163834810257,
+        "quality": "extraordinary",
+        "paintIndex": 10010,
+        "paintSeed": 821,
+        "category": "★"
+      }
+    },
+    "Minimal Wear": {
+      "Buff163": {
+        "price": 210.00000000000003
+      },
+      "CSFloat": {
+        "price": 217,
+        "float": 0.12532883882522583,
+        "rarity": 6,
+        "paint_index": 10010,
+        "paint_seed": 426,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 330
+      },
+      "HaloSkins": {
+        "price": 218.12
+      },
+      "DMarket": {
+        "price": 237.91,
+        "floatValue": 0.138022318482399,
+        "quality": "extraordinary",
+        "paintIndex": 10010,
+        "paintSeed": 971,
+        "category": "★"
+      }
+    },
+    "Field-Tested": {
+      "Buff163": {
+        "price": 163.8
+      },
+      "SkinPort": {
+        "price": 159.14
+      },
+      "CSFloat": {
+        "price": 154.75,
+        "float": 0.24075986444950104,
+        "rarity": 6,
+        "paint_index": 10010,
+        "paint_seed": 374,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 219.34
+      },
+      "HaloSkins": {
+        "price": 162.59
+      },
+      "DMarket": {
+        "price": 151.86,
+        "floatValue": 0.36965274810791016,
+        "quality": "extraordinary",
+        "paintIndex": 10010,
+        "paintSeed": 432,
+        "category": "★"
+      }
+    },
+    "Well-Worn": {
+      "Buff163": {
+        "price": 139.3
+      },
+      "CSFloat": {
+        "price": 135.78,
+        "float": 0.38071537017822266,
+        "rarity": 6,
+        "paint_index": 10010,
+        "paint_seed": 129,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 204.99
+      },
+      "HaloSkins": {
+        "price": 142.15
+      },
+      "DMarket": {
+        "price": 155.34,
+        "floatValue": 0.38458558917045593,
+        "quality": "extraordinary",
+        "paintIndex": 10010,
+        "paintSeed": 256,
+        "category": "★"
+      }
+    },
+    "Battle-Scarred": {
+      "Buff163": {
+        "price": 136.57000000000002
+      },
+      "SkinPort": {
+        "price": 182.16
+      },
+      "CSFloat": {
+        "price": 139.79,
+        "float": 0.4672527611255646,
+        "rarity": 6,
+        "paint_index": 10010,
+        "paint_seed": 261,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 329.6
+      },
+      "HaloSkins": {
+        "price": 135.48
+      },
+      "DMarket": {
+        "price": 132.87,
+        "floatValue": 0.47678542137145996,
+        "quality": "extraordinary",
+        "paintIndex": 10010,
+        "paintSeed": 993,
+        "category": "★"
+      }
     }
   },
-  "★ Hand Wraps | Spruce DDPAT (Battle-Scarred)": {
-    "Buff163": {
-      "price": 137.20000000000002
+  "★ Hand Wraps | Desert Shamagh": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 150.23
+      },
+      "CSFloat": {
+        "price": 139.04,
+        "float": 0.13787561655044556,
+        "rarity": 6,
+        "paint_index": 10081,
+        "paint_seed": 978,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 172
+      },
+      "HaloSkins": {
+        "price": 140.77
+      },
+      "DMarket": {
+        "price": 143.49,
+        "floatValue": 0.13316656649112701,
+        "quality": "extraordinary",
+        "paintIndex": 10081,
+        "paintSeed": 882,
+        "category": "★"
+      },
+      "Buff163": {
+        "price": 145.11
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 107.26
+      },
+      "CSFloat": {
+        "price": 94.93,
+        "float": 0.37726032733917236,
+        "rarity": 6,
+        "paint_index": 10081,
+        "paint_seed": 793,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 127.94
+      },
+      "HaloSkins": {
+        "price": 96.72
+      },
+      "DMarket": {
+        "price": 95.79,
+        "floatValue": 0.34978464245796204,
+        "quality": "extraordinary",
+        "paintIndex": 10081,
+        "paintSeed": 172,
+        "category": "★"
+      },
+      "Buff163": {
+        "price": 98.00000000000001
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 109.86
+      },
+      "CSFloat": {
+        "price": 98.01,
+        "float": 0.4182191491127014,
+        "rarity": 6,
+        "paint_index": 10081,
+        "paint_seed": 702,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 154.1
+      },
+      "HaloSkins": {
+        "price": 96.49
+      },
+      "DMarket": {
+        "price": 97.8,
+        "floatValue": 0.44765475392341614,
+        "quality": "extraordinary",
+        "paintIndex": 10081,
+        "paintSeed": 348,
+        "category": "★"
+      },
+      "Buff163": {
+        "price": 96.60000000000001
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 101.36
+      },
+      "CSFloat": {
+        "price": 93.55,
+        "float": 0.5543748736381531,
+        "rarity": 6,
+        "paint_index": 10081,
+        "paint_seed": 267,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 126
+      },
+      "HaloSkins": {
+        "price": 95.75
+      },
+      "DMarket": {
+        "price": 104.21000000000001,
+        "floatValue": 0.6351097226142883,
+        "quality": "extraordinary",
+        "paintIndex": 10081,
+        "paintSeed": 176,
+        "category": "★"
+      },
+      "Buff163": {
+        "price": 96.86040000000001
+      }
+    },
+    "Factory New": {
+      "Steam": {
+        "price": 1483.18
+      }
     }
   },
-  "★ Hand Wraps | Spruce DDPAT (Factory New)": {
-    "Buff163": {
-      "price": 1190
+  "★ Hand Wraps | Badlands": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 715.93
+      },
+      "CSFloat": {
+        "price": 650,
+        "float": 0.06737673282623291,
+        "rarity": 6,
+        "paint_index": 10036,
+        "paint_seed": 815,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 243.61
+      },
+      "CSFloat": {
+        "price": 224.91,
+        "float": 0.14881211519241333,
+        "rarity": 6,
+        "paint_index": 10036,
+        "paint_seed": 339,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 353.05
+      },
+      "HaloSkins": {
+        "price": 229.38
+      },
+      "DMarket": {
+        "price": 223.59,
+        "floatValue": 0.1384509801864624,
+        "quality": "extraordinary",
+        "paintIndex": 10036,
+        "paintSeed": 301,
+        "category": "★"
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 217.78
+      },
+      "CSFloat": {
+        "price": 159,
+        "float": 0.32907482981681824,
+        "rarity": 6,
+        "paint_index": 10036,
+        "paint_seed": 409,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 194.73000000000002
+      },
+      "HaloSkins": {
+        "price": 159.78
+      },
+      "DMarket": {
+        "price": 175.33,
+        "floatValue": 0.27589231729507446,
+        "quality": "extraordinary",
+        "paintIndex": 10036,
+        "paintSeed": 153,
+        "category": "★"
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 167.7
+      },
+      "Steam": {
+        "price": 233.94
+      },
+      "DMarket": {
+        "price": 138.8,
+        "floatValue": 0.4149464964866638,
+        "quality": "extraordinary",
+        "paintIndex": 10036,
+        "paintSeed": 271,
+        "category": "★"
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 143.95
+      },
+      "CSFloat": {
+        "price": 146.98,
+        "float": 0.6279994249343872,
+        "rarity": 6,
+        "paint_index": 10036,
+        "paint_seed": 950,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "HaloSkins": {
+        "price": 141.73
+      },
+      "DMarket": {
+        "price": 129.97,
+        "floatValue": 0.6196939945220947,
+        "quality": "extraordinary",
+        "paintIndex": 10036,
+        "paintSeed": 194,
+        "category": "★"
+      }
     }
   },
-  "★ Hand Wraps | Spruce DDPAT (Minimal Wear)": {
-    "Buff163": {
-      "price": 214.20000000000002
+  "★ Hand Wraps | CAUTION!": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1174.08
+      },
+      "CSFloat": {
+        "price": 991.4300000000001,
+        "float": 0.0677240639925003,
+        "rarity": 6,
+        "paint_index": 10084,
+        "paint_seed": 263,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "HaloSkins": {
+        "price": 1055.85
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 404.8
+      },
+      "CSFloat": {
+        "price": 370.83,
+        "float": 0.1352851539850235,
+        "rarity": 6,
+        "paint_index": 10084,
+        "paint_seed": 256,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 526.9300000000001
+      },
+      "HaloSkins": {
+        "price": 391.45
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 231.34
+      },
+      "CSFloat": {
+        "price": 227.89000000000001,
+        "float": 0.3257972002029419,
+        "rarity": 6,
+        "paint_index": 10084,
+        "paint_seed": 509,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 310.5
+      },
+      "HaloSkins": {
+        "price": 237.9
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 237.58
+      },
+      "CSFloat": {
+        "price": 232.09,
+        "float": 0.3866310715675354,
+        "rarity": 6,
+        "paint_index": 10084,
+        "paint_seed": 21,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 283.18
+      },
+      "HaloSkins": {
+        "price": 211.92
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 199.28
+      },
+      "CSFloat": {
+        "price": 182.92000000000002,
+        "float": 0.5098704695701599,
+        "rarity": 6,
+        "paint_index": 10084,
+        "paint_seed": 453,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 260.98
+      },
+      "HaloSkins": {
+        "price": 188.04
+      }
     }
   },
-  "★ Hand Wraps | Spruce DDPAT (Well-Worn)": {
-    "Buff163": {
-      "price": 143.08
+  "★ Hand Wraps | Duct Tape": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 153.57
+      },
+      "CSFloat": {
+        "price": 137.66,
+        "float": 0.14386563003063202,
+        "rarity": 6,
+        "paint_index": 10055,
+        "paint_seed": 256,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 200
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 119.04
+      },
+      "CSFloat": {
+        "price": 109.44,
+        "float": 0.349533349275589,
+        "rarity": 6,
+        "paint_index": 10055,
+        "paint_seed": 67,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 150.11
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 131.97
+      },
+      "CSFloat": {
+        "price": 118.99000000000001,
+        "float": 0.38200241327285767,
+        "rarity": 6,
+        "paint_index": 10055,
+        "paint_seed": 179,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 146.89000000000001
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 114.34
+      },
+      "CSFloat": {
+        "price": 109.67,
+        "float": 0.48574575781822205,
+        "rarity": 6,
+        "paint_index": 10055,
+        "paint_seed": 879,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 146.48
+      }
+    },
+    "Factory New": {
+      "CSFloat": {
+        "price": 346.52,
+        "float": 0.06623062491416931,
+        "rarity": 6,
+        "paint_index": 10055,
+        "paint_seed": 59,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 1910.21
+      }
+    }
+  },
+  "★ Hand Wraps | Cobalt Skulls": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 834.8
+      },
+      "CSFloat": {
+        "price": 785,
+        "float": 0.12986750900745392,
+        "rarity": 6,
+        "paint_index": 10053,
+        "paint_seed": 36,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 1224.57
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 468.25
+      },
+      "CSFloat": {
+        "price": 429.99,
+        "float": 0.3496319651603699,
+        "rarity": 6,
+        "paint_index": 10053,
+        "paint_seed": 271,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 647.8100000000001
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 414.04
+      },
+      "CSFloat": {
+        "price": 369.88,
+        "float": 0.38632142543792725,
+        "rarity": 6,
+        "paint_index": 10053,
+        "paint_seed": 472,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 509.38
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 346.48
+      },
+      "CSFloat": {
+        "price": 301.02,
+        "float": 0.6558946371078491,
+        "rarity": 6,
+        "paint_index": 10053,
+        "paint_seed": 624,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      },
+      "Steam": {
+        "price": 450.8
+      }
+    }
+  },
+  "★ Hand Wraps | Overprint": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 961.4
+      },
+      "CSFloat": {
+        "price": 799,
+        "float": 0.0657164454460144,
+        "rarity": 6,
+        "paint_index": 10054,
+        "paint_seed": 78,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 346.11
+      },
+      "CSFloat": {
+        "price": 325.68,
+        "float": 0.1418575644493103,
+        "rarity": 6,
+        "paint_index": 10054,
+        "paint_seed": 293,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 208.77
+      },
+      "CSFloat": {
+        "price": 206.11,
+        "float": 0.37368035316467285,
+        "rarity": 6,
+        "paint_index": 10054,
+        "paint_seed": 306,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 202.4
+      },
+      "CSFloat": {
+        "price": 176.54,
+        "float": 0.3860424757003784,
+        "rarity": 6,
+        "paint_index": 10054,
+        "paint_seed": 510,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 181.33
+      },
+      "CSFloat": {
+        "price": 143.02,
+        "float": 0.7645891904830933,
+        "rarity": 6,
+        "paint_index": 10054,
+        "paint_seed": 317,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    }
+  },
+  "★ Hand Wraps | Giraffe": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 465.36
+      },
+      "CSFloat": {
+        "price": 579.99,
+        "float": 0.06301779299974442,
+        "rarity": 6,
+        "paint_index": 10082,
+        "paint_seed": 524,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 178.03
+      },
+      "CSFloat": {
+        "price": 148,
+        "float": 0.1363557130098343,
+        "rarity": 6,
+        "paint_index": 10082,
+        "paint_seed": 185,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 137.2
+      },
+      "CSFloat": {
+        "price": 121,
+        "float": 0.35774946212768555,
+        "rarity": 6,
+        "paint_index": 10082,
+        "paint_seed": 428,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 122.15
+      },
+      "CSFloat": {
+        "price": 104.65,
+        "float": 0.38573017716407776,
+        "rarity": 6,
+        "paint_index": 10082,
+        "paint_seed": 537,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 98.76
+      },
+      "CSFloat": {
+        "price": 98.4,
+        "float": 0.4992098808288574,
+        "rarity": 6,
+        "paint_index": 10082,
+        "paint_seed": 112,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    }
+  },
+  "★ Hand Wraps | Arboreal": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 356.02
+      },
+      "CSFloat": {
+        "price": 334.99,
+        "float": 0.0689580962061882,
+        "rarity": 6,
+        "paint_index": 10056,
+        "paint_seed": 485,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 163.18
+      },
+      "CSFloat": {
+        "price": 142.99,
+        "float": 0.13005700707435608,
+        "rarity": 6,
+        "paint_index": 10056,
+        "paint_seed": 434,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 129.39
+      },
+      "CSFloat": {
+        "price": 119.99000000000001,
+        "float": 0.32678380608558655,
+        "rarity": 6,
+        "paint_index": 10056,
+        "paint_seed": 711,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Well-Worn": {
+      "CSFloat": {
+        "price": 110.85000000000001,
+        "float": 0.38521990180015564,
+        "rarity": 6,
+        "paint_index": 10056,
+        "paint_seed": 431,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    },
+    "Battle-Scarred": {
+      "CSFloat": {
+        "price": 107,
+        "float": 0.45567429065704346,
+        "rarity": 6,
+        "paint_index": 10056,
+        "paint_seed": 249,
+        "quality": 3,
+        "stattrak": false,
+        "souvenir": false
+      }
+    }
+  },
+  "★ Hand Wraps | Leather": {
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 216.42
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 250.46
+      }
+    }
+  },
+  "★ Hand Wraps | Constrictor": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 1057.54
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 152.47
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 129.8
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 108.29
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 118.58
+      }
+    }
+  },
+  "★ Hand Wraps | Slaughter": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 701.8
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 395.91
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 290.98
+      }
+    }
+  },
+  "★ Moto Gloves | Eclipse": {
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 376.11
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 195.66
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 163.94
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 152.89
+      }
+    }
+  },
+  "★ Moto Gloves | Turtle": {
+    "Factory New": {
+      "SkinPort": {
+        "price": 860.27
+      }
+    },
+    "Minimal Wear": {
+      "SkinPort": {
+        "price": 308.36
+      }
+    },
+    "Field-Tested": {
+      "SkinPort": {
+        "price": 162.49
+      }
+    },
+    "Well-Worn": {
+      "SkinPort": {
+        "price": 156.86
+      }
+    },
+    "Battle-Scarred": {
+      "SkinPort": {
+        "price": 136.12
+      }
     }
   }
 }

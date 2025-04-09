@@ -201,21 +201,28 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
 				console.error(`${this.prefix}: Error reading prices_output.json: ${error.message}`);
 			}
 
-			// Process data to create the proper structure
-			for (const item of data) {
-				if (!existingData[item.market_hash_name]) {
-					existingData[item.market_hash_name] = {};
-				}
+      for (const item of data) {
+        const nameWithoutWear = item.market_hash_name.split('(')[0].trim();
+        const wearMatch = item.market_hash_name.match(/\((.*?)\)$/);
+        const wearCondition = wearMatch ? wearMatch[1] : '';
 
-				existingData[item.market_hash_name][this.apiName] = {
-					price: item.price,
-					...Object.fromEntries(
-						Object.entries(item).filter(([key]) =>
-							!['market_hash_name', 'source'].includes(key) && key !== 'price'
-						)
-					)
-				};
-			}
+        if (!existingData[nameWithoutWear]) {
+          existingData[nameWithoutWear] = {};
+        }
+        
+        if (!existingData[nameWithoutWear][wearCondition]) {
+          existingData[nameWithoutWear][wearCondition] = {};
+        }
+        
+        existingData[nameWithoutWear][wearCondition][this.apiName] = {
+          price: item.price,
+          ...Object.fromEntries(
+            Object.entries(item).filter(([key]) => 
+              !['market_hash_name', 'source'].includes(key) && key !== 'price'
+            )
+          )
+        };
+      }
 
 			fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2), 'utf8');
 			console.log(`${this.prefix}: Successfully wrote data to prices_output.json`);
@@ -239,6 +246,12 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
 		let results = [];
 		const index = await haloskinsApi.getIndex();
 		for (let i = index; i < marketHashNames.length; i++) {
+			if (i % 200 === 0 && i !== 0) {
+				await haloskinsApi.writeToJson(results);
+				await new Promise(resolve => setTimeout(resolve, 1000));
+				results = [];
+			}
+			
 			const marketHashName = marketHashNames[i];
 			const data = await haloskinsApi.fetchPrice(marketHashName);
 
@@ -260,12 +273,8 @@ export default class HaloSkinsAPI extends SkinPriceAPI {
 			}
 
 			results.push(data);
-
-			if (i % 5 === 0 && i !== 0) {
-				await haloskinsApi.writeToJson(results);
-				await new Promise(resolve => setTimeout(resolve, 1000));
-				results = [];
-			}
 		}
+		await haloskinsApi.writeToJson(results);
+		await new Promise(resolve => setTimeout(resolve, 1000));
 	}
 })();

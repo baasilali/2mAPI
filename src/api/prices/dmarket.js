@@ -83,11 +83,19 @@ export default class DMarketAPI extends SkinPriceAPI {
       }
       
       for (const item of data) {
-        if (!existingData[item.market_hash_name]) {
-          existingData[item.market_hash_name] = {};
+        const nameWithoutWear = item.market_hash_name.split('(')[0].trim();
+        const wearMatch = item.market_hash_name.match(/\((.*?)\)$/);
+        const wearCondition = wearMatch ? wearMatch[1] : '';
+
+        if (!existingData[nameWithoutWear]) {
+          existingData[nameWithoutWear] = {};
         }
         
-        existingData[item.market_hash_name][this.apiName] = {
+        if (!existingData[nameWithoutWear][wearCondition]) {
+          existingData[nameWithoutWear][wearCondition] = {};
+        }
+        
+        existingData[nameWithoutWear][wearCondition][this.apiName] = {
           price: item.price,
           ...Object.fromEntries(
             Object.entries(item).filter(([key]) => 
@@ -118,7 +126,7 @@ export default class DMarketAPI extends SkinPriceAPI {
   while(true) {
     let results = [];
     for(let i = 0; i < marketHashNames.length; i++) {
-      if(i % 5 === 0 && i !== 0) {
+      if(i % 200 === 0 && i !== 0) {
         await dmarketApi.writeToJson(results);
         await new Promise(resolve => setTimeout(resolve, 1000));
         results = [];
@@ -130,5 +138,7 @@ export default class DMarketAPI extends SkinPriceAPI {
       }
       results.push(data);
     }
+    await dmarketApi.writeToJson(results);
+    await new Promise(resolve => setTimeout(resolve, 1000));
   }
 })();

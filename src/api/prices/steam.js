@@ -38,68 +38,6 @@ export default class SteamAPI extends SkinPriceAPI {
     return missingNameids;
   }
 
-  // async fetchPrices(marketHashNames) {
-  //   const results = [];
-  //   const nameidFilePath = path.resolve(process.cwd(), 'data/steam/cs2_item_nameid.json');
-  //   const nameidData = JSON.parse(fs.readFileSync(nameidFilePath, 'utf8'));
-  
-  //   for (const marketHashName of marketHashNames) {
-  //     try {
-  //       const item_nameid = nameidData[marketHashName];
-        
-  //       if (!item_nameid) {
-  //         console.error(chalk.red(`${this.prefix}: No item_nameid found in 'cs2_item_nameid.json' for market_hash_name: ${marketHashName}`));
-          
-  //         const missingNameidDir = path.resolve(process.cwd(), 'src/api/data/steam');
-  //         const missingNameidPath = path.join(missingNameidDir, 'missing_nameid.json');
-          
-  //         if (!fs.existsSync(missingNameidDir)) {
-  //           fs.mkdirSync(missingNameidDir, { recursive: true });
-  //         }
-          
-  //         let missingNameids = {};
-  //         if (fs.existsSync(missingNameidPath)) {
-  //           try {
-  //             missingNameids = JSON.parse(fs.readFileSync(missingNameidPath, 'utf8'));
-  //           } catch (err) {
-  //             console.error(chalk.red(`${this.prefix}: Error reading missing_nameid.json: ${err.message}`));
-  //           }
-  //         }
-          
-  //         missingNameids[marketHashName] = 1;
-          
-  //         fs.writeFileSync(missingNameidPath, JSON.stringify(missingNameids, null, 2));
-          
-  //         continue;
-  //       }
-        
-  //       const url = `https://steamcommunity.com/market/itemordershistogram?country=US&language=english&currency=1&item_nameid=${item_nameid}`;
-      
-  //       const response = await fetch(url);
-  //       const data = await response.json();
-      
-  //       if (!data || !data.lowest_sell_order) {
-  //         console.error(chalk.red(`${this.prefix}: No price data found for market_hash_name: ${marketHashName}`));
-  //         continue;
-  //       }
-      
-  //       console.log(chalk.green(`${this.prefix}: Found value for ${marketHashName}`));
-      
-  //       results.push({
-  //         market_hash_name: marketHashName,
-  //         price: data.lowest_sell_order * 0.01,
-  //         source: 'Steam'
-  //       });
-      
-  //       await new Promise(resolve => setTimeout(resolve, 100));
-  //     } catch (error) {
-  //       console.error(chalk.red(`${this.prefix}: Error fetching price for ${marketHashName}: ${error.message}`));
-  //     }
-  //   }
-  
-  //   return results;
-  // }
-
   async fetchPrice(marketHashName) {  
     try {
       const item_nameid = this.nameIdData[marketHashName];
@@ -168,13 +106,20 @@ export default class SteamAPI extends SkinPriceAPI {
         console.error(`${this.prefix}: Error reading prices_output.json: ${error.message}`);
       }
       
-      // Process data to create the proper structure
       for (const item of data) {
-        if (!existingData[item.market_hash_name]) {
-          existingData[item.market_hash_name] = {};
+        const nameWithoutWear = item.market_hash_name.split('(')[0].trim();
+        const wearMatch = item.market_hash_name.match(/\((.*?)\)$/);
+        const wearCondition = wearMatch ? wearMatch[1] : '';
+
+        if (!existingData[nameWithoutWear]) {
+          existingData[nameWithoutWear] = {};
         }
         
-        existingData[item.market_hash_name][this.apiName] = {
+        if (!existingData[nameWithoutWear][wearCondition]) {
+          existingData[nameWithoutWear][wearCondition] = {};
+        }
+        
+        existingData[nameWithoutWear][wearCondition][this.apiName] = {
           price: item.price,
           ...Object.fromEntries(
             Object.entries(item).filter(([key]) => 
@@ -206,7 +151,7 @@ export default class SteamAPI extends SkinPriceAPI {
     let results = [];
 
     for(let i = 0; i < marketHashNames.length; i++) {
-      if(i % 5 === 0 && i !== 0) {
+      if(i % 200 === 0 && i !== 0) {
         await steamApi.writeToJson(results);
         await new Promise(resolve => setTimeout(resolve, 1000));
         results = [];
@@ -218,5 +163,7 @@ export default class SteamAPI extends SkinPriceAPI {
       }
       results.push(data);
     }
+    await steamApi.writeToJson(results);
+    await new Promise(resolve => setTimeout(resolve, 1000));
   }
 })();

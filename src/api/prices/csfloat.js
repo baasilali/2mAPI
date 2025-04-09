@@ -85,11 +85,19 @@ export default class CSFloatAPI extends SkinPriceAPI {
       }
       
       for (const item of data) {
-        if (!existingData[item.market_hash_name]) {
-          existingData[item.market_hash_name] = {};
+        const nameWithoutWear = item.market_hash_name.split('(')[0].trim();
+        const wearMatch = item.market_hash_name.match(/\((.*?)\)$/);
+        const wearCondition = wearMatch ? wearMatch[1] : '';
+
+        if (!existingData[nameWithoutWear]) {
+          existingData[nameWithoutWear] = {};
         }
         
-        existingData[item.market_hash_name][this.apiName] = {
+        if (!existingData[nameWithoutWear][wearCondition]) {
+          existingData[nameWithoutWear][wearCondition] = {};
+        }
+        
+        existingData[nameWithoutWear][wearCondition][this.apiName] = {
           price: item.price,
           ...Object.fromEntries(
             Object.entries(item).filter(([key]) => 
@@ -116,13 +124,22 @@ export default class CSFloatAPI extends SkinPriceAPI {
 (async () => {
   const csfloatApi = new CSFloatAPI(process.env.CS_FLOAT_API_KEY);
   const marketHashNames = workerData;
-
   while(true) {
     let results = [];
 
-    const index = await csfloatApi.getIndex();
+    let index = await csfloatApi.getIndex();
+
+    if(index >= marketHashNames.length) {
+      index = 0;
+    }
 
     for(let i = index; i < marketHashNames.length; i++) {
+      if(i % 200 === 0 && i !== 0) {
+        await csfloatApi.writeToJson(results);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        results = [];
+      }
+      
       const marketHashName = marketHashNames[i];
       const data = await csfloatApi.fetchPrice(marketHashName);
 
@@ -144,12 +161,8 @@ export default class CSFloatAPI extends SkinPriceAPI {
       }
 
       results.push(data);
-
-      if(i % 5 === 0 && i !== 0) {
-        await csfloatApi.writeToJson(results);
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        results = [];
-      }
     }
+    await csfloatApi.writeToJson(results);
+    await new Promise(resolve => setTimeout(resolve, 1000));
   }
 })();
