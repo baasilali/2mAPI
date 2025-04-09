@@ -91,14 +91,40 @@ export default class SkinPortAPI extends SkinPriceAPI {
       }
     }
   }
-} 
+
+  async saveSkinportDataFile() {
+    try {
+      const response = await fetch('https://api.skinport.com/v1/items?app_id=730&currency=USD&tradable=true', {
+        method: 'GET',
+        headers: {
+          'Accept-Encoding': 'br'
+        }
+      });
+      
+      const data = await response.json();
+      
+      const dirPath = path.resolve(process.cwd(), 'data/skinport');
+      if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+      }
+      
+      const filePath = path.resolve(dirPath, 'skinport_data.json');
+      fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
+      console.log(`${this.prefix}: Successfully saved data to skinport_data.json`);
+    } catch (error) {
+      console.error(`${this.prefix}: Error fetching or saving data: ${error.message}`);
+    }
+  }
+}
 
 (async () => {
   const skinportApi = new SkinPortAPI(null);
   const marketHashNames = workerData;
 
   while(true) {
+    await skinportApi.saveSkinportDataFile();
     let results = [];
+
     for(let i = 0; i < marketHashNames.length; i++) {
       if(i % 200 === 0 && i !== 0) {
         await skinportApi.writeToJson(results);
