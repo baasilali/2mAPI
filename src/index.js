@@ -10,8 +10,8 @@ async function main() {
   const marketHashNames = fs.readFileSync(marketHashNamesFilePath, 'utf8').split('\n').map(line => line.trim()).filter(line => line.length > 0);
 
   try {
-    // const workers = ["buff163", "csfloat", "dmarket", "haloskins", "skinport", "steam"];
-    const workers = ["steam"];
+    const workers = ["buff163", "csfloat", "dmarket", "haloskins", "skinport", "steam"];
+    // const workers = ["steam"];
     for(const worker of workers) {
       const workerThread = new Worker(path.resolve(process.cwd(), 'src/api/prices/', `${worker}.js`), {
         workerData: marketHashNames
