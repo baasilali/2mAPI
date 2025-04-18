@@ -40,6 +40,8 @@ export default class SkinPortAPI extends SkinPriceAPI {
 
   async saveSkinportDataFile() {
     try {
+      console.log(`${this.prefix}: Fetching skinport_data.json`);
+
       const response = await fetch('https://api.skinport.com/v1/items?app_id=730&currency=USD&tradable=true', {
         method: 'GET',
         headers: {
@@ -65,29 +67,9 @@ export default class SkinPortAPI extends SkinPriceAPI {
 
 (async () => {
   const skinportApi = new SkinPortAPI(null);
-  const marketHashNames = workerData;
 
   while(true) {
     await skinportApi.saveSkinportDataFile();
-    let results = [];
-
-    for(let i = 0; i < marketHashNames.length; i++) {
-      if(i % 200 === 0 && i !== 0) {
-        await skinportApi.writeToJson(results);
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        results = [];
-      }
-
-      const marketHashName = marketHashNames[i];
-      const data = skinportApi.fetchPrice(marketHashName);
-
-      if(!data) {
-        continue;
-      }
-
-      results.push(data);
-    }
-    await skinportApi.writeToJson(results);
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1000 * 60 * 5));
   }
 })();

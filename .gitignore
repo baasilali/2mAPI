@@ -140,4 +140,6 @@ dist
 
 old_data/
 
+data/skinport/skinport_data.json
+
 prices_output.json
