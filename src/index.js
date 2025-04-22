@@ -29,10 +29,12 @@ async function scrapePrice(url) {
 
       const items = [];
 
-      $('div[name="list"] article').each((i, el) => {
-        const name = $(el).find('.relative .flex .flex .flex .flex .flex .font-bold').text();
-        const [store, price] = name.split('$');
-        items.push({ store, price });
+      $('.order-3 .active-offer').each((i, el) => {
+        const price = $(el).find('.text-lg').text();
+        const name = $(el).find('a[href^="https://csgoskins.gg/markets"]').text()
+          .replace(/\n/g, '')
+          .trim();
+        items.push({ name, price });
       });
 
       console.log(items);
@@ -44,7 +46,7 @@ async function scrapePrice(url) {
 }
 
 async function main() {
-  scrapePrice("https://pricempire.com/cs2-items/skin/talon-knife-doppler-phase-1");
+  scrapePrice("https://csgoskins.gg/items/awp-printstream/factory-new");
 }
 
 main();
